@@ -12,7 +12,7 @@ Try him by using (linux !, windows ?) : telnet localhost 58000
 */
 func main() {
 	cManager := ClientManager{}
-	listen, err := net.Listen("tcp", "localhost:58000")
+	listen, err := net.Listen("tcp", "0.0.0.0:58000")
 
 	if err != nil {
 		fmt.Printf("Can't start server : %s\n", err)
